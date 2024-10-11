@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="82dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_background"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profil" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/imageView"
+        android:fontFamily="sans-serif"
+        android:text="YUSUF FADILAH SEPTIANDIKA"
+        android:textColor="#0C0C0C"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewProdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNama"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@id/imageView"
+        android:text="@string/prodi" />
+
+    <TextView
+        android:id="@+id/textViewUniv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProdi"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@id/imageView"
+        android:text="@string/universitas" />
+
+    <RelativeLayout
+        android:id="@+id/blueBox"
+        android:layout_width="390dp"
+        android:layout_height="103dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_box">
+
+
+        <!-- Garis tengah vertikal di dalam kotak biru -->
+        <View
+            android:id="@+id/verticalLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white" />
+
+        <!-- Teks di tengah kanan -->
+
+        <TextView
+            android:id="@+id/textViewLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:text="55"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLeft2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="60dp"
+            android:text="SKS Diambil"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:text="3.90"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewRight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="59dp"
+            android:text="IP Kumulatif"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Jadwal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jadwal" />
+
+    <TextView
+        android:id="@+id/teksjadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="1dp"
+        android:text="Jadwal"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_toEndOf="@id/imageButton1"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Presensi"
+        android:scaleType="centerCrop"
+        android:src="@drawable/presensi" />
+
+    <TextView
+        android:id="@+id/tekspresensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/teksjadwal"
+        android:text="Presensi"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_toEndOf="@id/imageButton2"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Nilai"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nilai" />
+
+    <TextView
+        android:id="@+id/teksnilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/tekspresensi"
+        android:text="Nilai"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="275dp"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Tugas"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tugas" />
+
+    <TextView
+        android:id="@+id/teksbahantugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton4"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:text="Bahan &amp; Tugas"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="275dp"
+        android:layout_toEndOf="@id/imageButton4"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="KRSS/KRS"
+        android:scaleType="centerCrop"
+        android:src="@drawable/krs" />
+
+    <TextView
+        android:id="@+id/tekskrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton5"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/teksbahantugas"
+        android:text="KRSS/KRS"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="275dp"
+        android:layout_toEndOf="@id/imageButton5"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Wisuda"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wisuda" />
+
+    <TextView
+        android:id="@+id/tekstawisuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton6"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/tekskrs"
+        android:text="TA/Wisuda"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Kegiatan"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kegiatan" />
+
+    <TextView
+        android:id="@+id/tekskegiatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton7"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="1dp"
+        android:text="Kegiatan"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="400dp"
+        android:layout_toEndOf="@id/imageButton7"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="BIaya Kuliah"
+        android:scaleType="centerCrop"
+        android:src="@drawable/biaya" />
+
+    <TextView
+        android:id="@+id/teksbiaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton8"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/tekskegiatan"
+        android:text="Biaya Kuliah"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="400dp"
+        android:layout_toEndOf="@id/imageButton8"
+        android:background="@drawable/roundedbg"
+        android:clipToOutline="true"
+        android:contentDescription="Kuisioner"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kuisioner" />
+
+    <TextView
+        android:id="@+id/tekskuisioner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton9"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/teksbiaya"
+        android:text="Kuisioner"
+        android:textColor="#000" />
+
+
+</RelativeLayout>

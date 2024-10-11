@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">civitasxml</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prodi">Teknik Informatika (S1)</string>
+    <string name="universitas">Universitas Indraprasta PGRI</string>
+    <string name="profile_picture">profile_picture</string>
+</resources>

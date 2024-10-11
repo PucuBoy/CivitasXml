@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_box.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#2196F3" /> <!-- Warna latar belakang kotak -->
+    <corners android:radius="20dp" /> <!-- Radius sudut untuk membuat kotak bulat -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" /> <!-- Garis putih -->
+</shape>
