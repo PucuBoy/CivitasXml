@@ -23,7 +23,7 @@
     <RelativeLayout
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="380dp"
         android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@id/topAppBar">
 
@@ -83,8 +83,107 @@
 
         </RelativeLayout>
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/transparantbox"
+            android:layout_width="390dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/profile_picture">
 
+            <View
+                android:id="@+id/horizontalLine0"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#E4E4E4" />
+
+            <View
+                android:id="@+id/verticalLine0"
+                android:layout_width="4dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="#E4E4E4" />
+
+            <View
+                android:id="@+id/horizontalLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/verticalLine0"
+                android:background="#E4E4E4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blueBox"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/transparantbox"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_box">
+
+
+            <!-- Garis tengah vertikal di dalam kotak biru -->
+            <View
+                android:id="@+id/verticalLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/white" />
+
+            <!-- Teks di tengah kanan -->
+
+            <TextView
+                android:id="@+id/textViewLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="20dp"
+                android:text="55"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewLeft2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginTop="60dp"
+                android:text="SKS Total"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="80dp"
+                android:text="3.90"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewRight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="59dp"
+                android:text="IP Kumulatif"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
