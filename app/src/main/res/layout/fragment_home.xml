@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="16dp"
     tools:context=".HomeFragment">
 
     <ImageView
@@ -20,7 +21,7 @@
         android:id="@+id/textViewNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_toEndOf="@id/imageView"
         android:fontFamily="sans-serif"
@@ -33,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewNama"
-        android:layout_marginStart="13dp"
+        android:layout_marginStart="16dp"
         android:layout_toEndOf="@id/imageView"
         android:text="@string/prodi" />
 
@@ -42,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewProdi"
-        android:layout_marginStart="13dp"
+        android:layout_marginStart="16dp"
         android:layout_toEndOf="@id/imageView"
         android:text="@string/universitas" />
 
@@ -120,7 +121,7 @@
         android:layout_width="71dp"
         android:layout_height="71dp"
         android:layout_below="@id/imageView"
-        android:layout_marginStart="65dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="150dp"
         android:background="@drawable/roundedbg"
         android:clipToOutline="true"
@@ -133,8 +134,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton1"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="6dp"
         android:text="Jadwal"
         android:textColor="#000" />
 
@@ -158,7 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton2"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@+id/teksjadwal"
         android:text="Presensi"
         android:textColor="#000" />
@@ -183,7 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton3"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@id/tekspresensi"
         android:text="Nilai"
         android:textColor="#000" />
@@ -193,7 +194,7 @@
         android:layout_width="71dp"
         android:layout_height="71dp"
         android:layout_below="@id/imageView"
-        android:layout_marginStart="65dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="275dp"
         android:background="@drawable/roundedbg"
         android:clipToOutline="true"
@@ -206,8 +207,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton4"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
         android:text="Bahan &amp; Tugas"
         android:textColor="#000" />
 
@@ -231,7 +232,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton5"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@+id/teksbahantugas"
         android:text="KRSS/KRS"
         android:textColor="#000" />
@@ -256,7 +257,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton6"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@id/tekskrs"
         android:text="TA/Wisuda"
         android:textColor="#000" />
@@ -266,7 +267,7 @@
         android:layout_width="71dp"
         android:layout_height="71dp"
         android:layout_below="@id/imageView"
-        android:layout_marginStart="65dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="400dp"
         android:background="@drawable/roundedbg"
         android:clipToOutline="true"
@@ -279,8 +280,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton7"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="6dp"
         android:text="Kegiatan"
         android:textColor="#000" />
 
@@ -304,7 +305,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton8"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@+id/tekskegiatan"
         android:text="Biaya Kuliah"
         android:textColor="#000" />
@@ -329,7 +330,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton9"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@id/teksbiaya"
         android:text="Kuisioner"
         android:textColor="#000" />
